@@ -66,8 +66,10 @@ onClick={handleDrawerToggle} sx={{ textAlign: 'center' }}>
       <List>
         {navItems.map((item) => (
           <ListItem key={item[0]} disablePadding>
-            <ListItemButton sx={{ textAlign: 'center' }} onClick={()
-=> scrollToSection(item[1])}>
+            <ListItemButton 
+              sx={{ textAlign: 'center' }} 
+              onClick={() => scrollToSection(item[1])}
+            >
               <ListItemText primary={item[0]} />
             </ListItemButton>
           </ListItem>
